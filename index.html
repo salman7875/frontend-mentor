@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <img src="./images/pattern-bg.png" alt="background image">
+    <div class="text">
+      <h1>IP Address Tracker</h1>
+      <div class="search">
+        <input type="text" placeholder="Search for any IP address or domain" class="inp-search">
+        <button class="btn--search"><img src="./images/icon-arrow.svg" alt="btn arrow"></button>
+      </div>
+    </div>
+
+    <div class="inner-container">
+      <div class="box-1">
+        <p class="title">IP Address</p>
+        <p class="output ip">192.212.174.101</p>
+      </div>
+
+      <div class="box-1">
+        <p class="title">Location</p>
+        <p class="output location">Brooklyn, NY 10001</p>
+      </div>
+
+      <div class="box-1">
+        <p class="title">Timezone</p>
+        <p class="output timezone">UTC -05:00</p>
+      </div>
+
+      <div class="box-1">
+        <p class="title">ISP</p>
+        <p class="output isp">SpaceX Starlink</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
+</html>

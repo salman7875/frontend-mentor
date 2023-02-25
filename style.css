@@ -1,0 +1,92 @@
+:root {
+  --very-dark-grey: hsl(0, 0%, 17%);
+  --dark-grey: hsl(0, 0%, 17%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.8rem;
+  overflow-x: hidden;
+}
+
+.container {
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.text h1 {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.search {
+  width: 60rem;
+}
+
+.search .inp-search {
+  width: 80%;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 11px;
+  outline: none;
+  font-size: 1.8rem;
+}
+
+.search button {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 11px;
+  cursor: pointer;
+}
+
+/* INNER CONTAINER */
+.inner-container {
+  width: 90rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-around;
+  gap: 3.2rem;
+  padding: 2rem 2rem 4rem 2rem;
+  border-radius: 11px;
+  position: absolute;
+  bottom: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.title {
+  color: var(--dark-grey);
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+
+.output {
+  font-weight: 500;
+  font-size: 2.2rem;
+}
+
+/* MAP */
+#map {
+  height: 50vh;
+  overflow-x: hidden;
+}
