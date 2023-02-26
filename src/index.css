@@ -1,0 +1,28 @@
+:root {
+  --dark-blue-intro: hsl(217, 28%, 15%);
+  --dark-blue-main: hsl(218, 28%, 13%);
+  --dark-blue-footer: hsl(216, 53%, 9%);
+  --dark-blue-testimonial: hsl(219, 30%, 18%);
+
+  --cyan: hsl(176, 68%, 64%);
+  --blue: hsl(198, 60%, 50%);
+  --light-red: hsl(0, 100%, 63%);
+
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  background-color: var(--dark-blue-main);
+}
