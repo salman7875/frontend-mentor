@@ -1,0 +1,28 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem 10rem;
+  row-gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 2rem 8rem;
+  color: #fff;
+}
+
+.wrapper img {
+  margin-bottom: 2rem;
+}
+
+.wrapper h2 {
+  margin-bottom: 1.4rem;
+}
+
+.wrapper p {
+  text-align: center;
+}

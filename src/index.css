@@ -24,5 +24,6 @@ html {
 body {
   font-size: 1.4rem;
   font-family: sans-serif;
-  background-color: var(--dark-blue-main);
+  background-color: var(--dark-blue-intro);
+  overflow-x: hidden;
 }
