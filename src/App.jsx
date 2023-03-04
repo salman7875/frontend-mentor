@@ -1,6 +1,7 @@
-import About from './pages/About/About'
-import Home from './pages/Home/Home'
 import Navbar from './pages/Navbar/Navbar'
+import Home from './pages/Home/Home'
+import About from './pages/About/About'
+import Productive from './pages/Productive/Productive'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       </header>
       <main>
         <About />
+        <Productive />
       </main>
     </>
   )

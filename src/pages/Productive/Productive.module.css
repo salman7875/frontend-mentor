@@ -1,0 +1,46 @@
+.productive {
+  color: #fff;
+  padding: 3rem 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.left {
+  flex: 1;
+}
+
+.left img {
+  width: 95%;
+}
+
+.right {
+  flex: 1;
+}
+
+.heading {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.p1 {
+  margin-bottom: 1.6rem;
+}
+
+.p2 {
+  margin-bottom: 2rem;
+}
+
+.link:link,
+.link:visited {
+  color: var(--cyan);
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.link:hover,
+.link:active {
+  text-decoration: underline;
+}
