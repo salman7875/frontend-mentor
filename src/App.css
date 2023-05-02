@@ -1,0 +1,91 @@
+.container {
+  background-color: rgba(31, 41, 55);
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-container {
+  border: 1px solid rgb(42, 42, 89);
+  width: 40rem;
+  height: 35rem;
+  border-radius: 6px;
+  background-color: rgba(7, 7, 50, 0.571);
+  color: #fff;
+  padding: 2rem;
+}
+
+.inner-container > h1 {
+  color: #ffa500;
+  font-size: 2.8rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.option {
+  margin: 2rem 0;
+}
+
+.option > label {
+  font-size: 1.8rem;
+  list-style: none;
+  margin-bottom: 1.6rem;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.inner-container > button {
+  padding: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: rgb(68, 0, 128);
+  border: none;
+  border-radius: 6px;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.inner-container > button:hover {
+  opacity: 0.8;
+}
+
+/* RESULT */
+.result-container {
+  border: 1px solid rgb(42, 42, 89);
+  width: 45rem;
+  height: 15rem;
+  border-radius: 6px;
+  background-color: rgba(7, 7, 50, 0.571);
+  color: #fff;
+  padding: 3rem;
+}
+
+.result-container > h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.result-container > h2 > span {
+  color: orange;
+  font-weight: 700;
+}
+
+.result-container > button {
+  width: 100%;
+  color: #fff;
+  background-color: orange;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.result-container > button:hover {
+  opacity: 0.8;
+}
