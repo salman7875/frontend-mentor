@@ -1,0 +1,51 @@
+.container {
+  background-color: #371b58;
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.wrapper {
+  background-color: #2e0249;
+  min-height: fit-content;
+  width: 50%;
+  border-radius: 9px;
+  padding: 2rem;
+}
+
+h2 {
+  color: orange;
+  font-weight: 300;
+}
+
+p {
+  margin: 2rem 0;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.author {
+  float: right;
+  font-size: 1.2rem;
+  color: orange;
+}
+
+button {
+  padding: 0.6rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  transition: all 0.5s;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: orange;
+  color: #fff;
+}
