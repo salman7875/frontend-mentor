@@ -1,0 +1,40 @@
+ion-header {
+  --border: none;
+  ion-toolbar {
+    --background: #ffd099;
+    --color: #000;
+  }
+}
+
+ion-content {
+  ion-item {
+    margin: 0 2vh;
+  }
+
+  ion-button.add {
+    margin: 1vh 2vh;
+    --background: #ffd099;
+    --color: #000;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    ion-text {
+      margin: 2vh auto;
+      font-size: 1.4rem;
+    }
+    ion-buttons {
+      margin: 1vh 2vh;
+      display: flex;
+      justify-content: space-between;
+
+      ion-button {
+        --background: #ffd099;
+        --color: #000;
+        display: flex;
+        gap: 3vh;
+      }
+    }
+  }
+}

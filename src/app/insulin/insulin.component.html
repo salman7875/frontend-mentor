@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Insulin</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-input
+      label="No. of Insulin: "
+      type="number"
+      placeholder="Number of Dose..."
+    ></ion-input>
+  </ion-item>
+
+  <ion-list>
+    <ion-item>
+      <ion-label class="ion-text-center">Number</ion-label>
+      <ion-label class="ion-text-center">Insulin Dose</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label class="ion-text-center">1.</ion-label>
+      <ion-label class="ion-text-center">16</ion-label>
+    </ion-item>
+  </ion-list>
+  <ion-buttons>
+    <ion-button routerLink="..">
+      <ion-icon name="arrow-back"></ion-icon>
+      Back
+    </ion-button>
+    <ion-button routerLink="/event"
+      >Next
+      <ion-icon name="arrow-forward"></ion-icon>
+    </ion-button>
+  </ion-buttons>
+</ion-content>

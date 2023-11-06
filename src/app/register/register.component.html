@@ -1,0 +1,84 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Personal Information</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollY]="true">
+  <ion-img src="../../assets/Hello-cuate.png"></ion-img>
+
+  <div class="inputs">
+    <ion-list>
+      <ion-item>
+        <ion-input
+          label="Your Name..."
+          labelPlacement="floating"
+          placeholder="Your Name..."
+          name="pName"
+          [(ngModel)]="pName"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Your Email..."
+          labelPlacement="floating"
+          placeholder="Your Email..."
+          name="pEmail"
+          [(ngModel)]="pEmail"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Your Mobile..."
+          labelPlacement="floating"
+          placeholder="Your Mobile..."
+          name="pMobile"
+          [(ngModel)]="pMobile"
+        ></ion-input>
+      </ion-item>
+      <ion-button expand="full" (click)="toggleDOB()">SELECT DOB</ion-button>
+      <div *ngIf="showDOB">
+        <ion-datetime
+          [showDefaultButtons]="true"
+          #date
+          (ionCancel)="showDOB = false"
+          (ionChange)="selectDate(date.value)"
+        ></ion-datetime>
+      </div>
+      <ion-item>
+        <ion-input
+          label="Doctor Name..."
+          labelPlacement="floating"
+          placeholder="Doctor Name..."
+          name="dName"
+          [(ngModel)]="dName"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Doctor Email..."
+          labelPlacement="floating"
+          placeholder="Doctor Email..."
+          name="dEmail"
+          [(ngModel)]="dEmail"
+        ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input
+          label="Doctor Mobile..."
+          labelPlacement="floating"
+          placeholder="Doctor Mobile..."
+          name="dMobile"
+          [(ngModel)]="dMobile"
+        ></ion-input>
+      </ion-item>
+      <div class="actions">
+        <ion-button
+        routerLink="/sugar"
+          >Next
+          <ion-icon name="arrow-forward"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-list>
+  </div>
+</ion-content>

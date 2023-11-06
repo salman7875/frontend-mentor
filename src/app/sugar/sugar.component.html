@@ -1,0 +1,53 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-title>Sugar Range</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-img src="../../assets/Building permit-rafiki.png"></ion-img>
+
+  <ion-item>
+    <ion-input
+      label="Starting Range"
+      type="number"
+      color="warning"
+      labelPlacement="floating"
+      placeholder="Starting Sugar Range..."
+      name="startRange"
+      [(ngModel)]="startRange"
+    ></ion-input>
+    <ion-input
+      label="Ending Range"
+      type="number"
+      color="warning"
+      labelPlacement="floating"
+      placeholder="Ending Sugar Range..."
+      name="startRange"
+      [(ngModel)]="endRange"
+    ></ion-input>
+  </ion-item>
+  <ion-button class="add" expand="full" (click)="addSugarRange()"
+    >Add Range</ion-button
+  >
+
+  <div>
+    <ion-text>All Sugar Ranges</ion-text>
+    <ion-list>
+      <ion-item *ngFor="let sugar of sugarRanges">
+        <ion-label slot="start">Start Range: {{ sugar.startRange }}</ion-label>
+        <ion-label slot="end">End Range: {{ sugar.endRange }}</ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-buttons>
+      <ion-button routerLink="..">
+        <ion-icon name="arrow-back"></ion-icon>
+        Back
+      </ion-button>
+      <ion-button routerLink="/event"
+        >Next
+        <ion-icon name="arrow-forward"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </div>
+</ion-content>

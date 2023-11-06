@@ -1,0 +1,39 @@
+ion-header {
+  --border: none;
+  ion-toolbar {
+    --background: #ffd099;
+    --color: #000;
+  }
+}
+
+ion-content {
+  --background: #000;
+  display: flex;
+}
+
+.inputs {
+  ion-list {
+    margin-top: 5vh;
+    border-radius: 5vh 5vh 0 0;
+    
+    ion-item {
+      margin-bottom: 0.5rem;
+      padding: 1rem;
+      border-bottom: 1px solid #888;
+    }
+    
+    ion-button {
+      --background: #ffd099;
+      --color: #000;
+      border-radius: 10px;
+      margin: 0 1vh;
+    }
+    
+    .actions {
+      display: flex;
+      justify-content: end;
+      margin-top: 2vh;
+      margin-right: 2vh;
+    }
+  }
+}
