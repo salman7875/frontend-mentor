@@ -23,18 +23,25 @@ body {
   background-color: rgb(255, 236, 214);
   height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .letter {
-  background: url('./paper.jpg');
+  background: url("./paper.jpg");
   background-size: cover;
   height: 5rem;
   width: 20rem;
   border: 1px solid black;
-  cursor: pointer;
+  cursor: grab;
 }
 
 .letter-text {
   font-size: 1.6rem;
   font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  .letter-text {
+    font-size: 1rem;
+  }
 }
