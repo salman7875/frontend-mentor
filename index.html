@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letters</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <audio src="papper.mp3"></audio>
+    <div class="container center"></div>
+
+    <script>
+      const container = document.querySelector(".container");
+      const audioEl = document.querySelector("audio");
+      const letterContent = [
+        { id: 1, content: "Hey, How are you?" },
+        { id: 2, content: "The task should be completed by 5!" },
+        { id: 3, content: "The january is not januaring." },
+        { id: 4, content: "Today, lets go for a walk." },
+      ];
+
+      // INITIALIZING UI
+      letterInit();
+      
+      const lettersEl = document.querySelectorAll(".letter");
+
+      lettersEl.forEach((letter) => {
+        letter.addEventListener("dragstart", function (e) {
+          audioEl.play();
+        });
+
+        letter.addEventListener("dragend", function (e) {
+          container.classList.remove("center");
+          audioEl.pause();
+          letter.style.transform = `translate(${e.x}px, ${e.y}px)`;
+        });
+      });
+
+      function letterInit() {
+        const html = letterContent.map((content) => {
+          return `
+              <div class="letter center" draggable="true">
+                  <p class="letter-text">${content.content}</p>
+              </div>
+              `;
+        });
+        container.innerHTML = html;
+      }
+    </script>
+  </body>
+</html>
